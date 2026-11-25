@@ -11,3 +11,17 @@ createRoot(document.getElementById('root')!).render(
     </StyledEngineProvider>
   </StrictMode>
 );
+
+if (
+  typeof window !== 'undefined' &&
+  'serviceWorker' in navigator &&
+  import.meta.env.PROD
+) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register('/Machine-Learnign/sw.js', { scope: '/Machine-Learnign/' })
+      .catch(() => {
+        // Ignore service worker registration errors in unsupported/restricted environments
+      });
+  });
+}

@@ -13,6 +13,7 @@ import { LessonDetailCard } from './components/LessonDetailCard';
 import { ApiKeyModal } from './components/ApiKeyModal';
 import { AiVisualTutor } from './components/AiVisualTutor';
 import { ReviewDeck } from './components/ReviewDeck';
+import { PwaInstallBanner } from './components/PwaInstallBanner';
 import { useApiSettings } from './hooks/useApiSettings';
 
 const STORAGE_KEY = 'ml_visual_study_flashcards_v1';
@@ -141,6 +142,8 @@ export default function App() {
       />
 
       <Container maxWidth="lg" className="py-6 sm:py-8">
+        <PwaInstallBanner language={language} />
+
         {activeTab === 'core' && (
           <Box className="space-y-6">
             <CoreFlowchart

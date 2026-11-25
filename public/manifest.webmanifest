@@ -1,0 +1,31 @@
+{
+  "name": "ML Visual Study Companion",
+  "short_name": "ML Visual",
+  "description": "80/20 Essential Machine Learning in English & Burmese with interactive visuals and AI tutor.",
+  "start_url": "/Machine-Learnign/",
+  "scope": "/Machine-Learnign/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f8fafc",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "/Machine-Learnign/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/Machine-Learnign/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/Machine-Learnign/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
